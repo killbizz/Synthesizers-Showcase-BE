@@ -3,6 +3,7 @@ package com.synthshowcase.SynthesizersShowcase.model;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 @Entity
 public class Synthesizer {
@@ -10,6 +11,7 @@ public class Synthesizer {
     @Id
     @GeneratedValue
     private Long id;
+    @Lob
     private String base64image;
     private String name;
     private String description;
@@ -24,7 +26,6 @@ public class Synthesizer {
     public void setId(Long id) {
         this.id = id;
     }
-
 
     public String getBase64image() {
         return this.base64image;
