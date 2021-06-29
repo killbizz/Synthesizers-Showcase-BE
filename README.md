@@ -20,6 +20,6 @@ SW created in order to practice the following topics:
 1. Install the required software
 2. Git clone the repository
 3. Launch Wamp server
-4. Create the necessary Database in order to contain synthesizer's data ( for example using phpMyAdmin dashboard )
+4. Create the necessary MySQL Database in order to contain synthesizer's data ( for example using phpMyAdmin dashboard )
 5. Run the `SynthesizersShowcaseApplication.java` file from Visual Studio Code (or use the Spring Boot Dashboard installing the Spring Boot Extension Pack for VS Code)
 6. Send requests from the `RESTClient.http` file in order to test the web services
