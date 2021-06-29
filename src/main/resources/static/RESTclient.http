@@ -1,0 +1,35 @@
+
+### GET all synths
+GET http://localhost:8080/synth HTTP/1.1
+
+### GET first synth
+GET http://localhost:8080/synth/1 HTTP/1.1
+
+### POST insert a new synth ( use DB latest ID + 1 )
+POST http://localhost:8080/synth HTTP/1.1
+Content-Type: application/json
+
+{
+    "base64image": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNkYPhfDwAChwGA60e6kgAAAABJRU5ErkJggg==",
+    "name": "5",
+    "description": "5",
+    "category": "5",
+    "price": 5
+}
+
+### GET the new synth ( use DB latest ID + 1 )
+GET http://localhost:8080/synth/5 HTTP/1.1
+
+### PUT modify the new synth ( use DB latest ID + 1 )
+PUT http://localhost:8080/synth/5 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "x",
+    "description": "x",
+    "category": "x",
+    "price": 69
+}
+
+### DELETE delete the new synth ( use DB latest ID + 1 )
+DELETE  http://localhost:8080/synth/5 HTTP/1.1
