@@ -1,6 +1,7 @@
 package com.synthshowcase.SynthesizersShowcase;
 
 import com.synthshowcase.SynthesizersShowcase.model.Synthesizer;
+import com.synthshowcase.SynthesizersShowcase.model.User;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -18,6 +19,7 @@ public class SynthesizersShowcaseApplication implements RepositoryRestConfigurer
 	@Override
     public void configureRepositoryRestConfiguration(RepositoryRestConfiguration config, CorsRegistry cors) {
         config.exposeIdsFor(Synthesizer.class);
+		config.exposeIdsFor(User.class);
     }
 
 }

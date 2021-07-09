@@ -17,6 +17,7 @@ public class Synthesizer {
     private String description;
     private String category;
     private double price;
+    private String creator;
 
 
     public Long getId() {
@@ -66,6 +67,14 @@ public class Synthesizer {
 
     public void setPrice(double price) {
         this.price = price;
+    }
+
+    public String getCreator() {
+        return this.creator;
+    }
+
+    public void setCreator(String creator) {
+        this.creator = creator;
     }
 
 }
